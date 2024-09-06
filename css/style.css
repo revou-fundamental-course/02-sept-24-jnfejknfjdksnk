@@ -1,1 +1,78 @@
-/* css /*
+.main-header{
+    text-align: center;
+}
+
+.selection-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-btn{
+    height: 50px;
+   
+    border: none;
+    border-radius: 10px;
+}
+
+.cadetblue-color{
+    background-color: cadetblue;
+}
+
+.pink-color{
+    background-color: pink;
+}
+
+.luas-segitiga-hdr{
+   text-align: center;
+    border: 1px solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px;
+    background-color: blanchedalmond;
+}
+
+.luas-segitiga-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.luas-segitiga-img{
+    height: 300px;
+    width: 300px;
+    background-image: url(https://cdn-brilio-net.akamaized.net/webp/news/2023/10/18/266312/2130002-rumus-luas-segitiga-sama-sisi.jpg);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.luas-segitiga-form-header{
+    text-align: center;
+}
+
+.input-data{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-data>input{
+    width: 75%;
+}
+
+input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.section-form{
+    display: flex;
+}
+
+.section-form>aside{
+    flex: 1;
+}
