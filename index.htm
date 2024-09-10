@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator Matematika</title>
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +18,6 @@
     <main>
         <section class="selection-content">
             <button href="#" name="button" class="selection-btn cadetblue-color">Segitiga</button>
-            <button href="#" name="button" class="selection-btn pink-color">Jajar Genjang</button>
         </section>
         
         <section class="section-form">
@@ -26,10 +26,27 @@
                     <h1 class="luas-segitiga-hdr">Luas Segitiga</h1>
                 </header>
     
-                <article class="luas-segitiga-content">
-                    <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga:</p>
-                </article>
+                <div class="luas-segitiga-content">
+                    <div class="luas-segitiga-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpu_K2sD2INTf_XTpzrTpyG9AVToAbggZGJg&s" alt="Segitiga">
+                    </div>
+                    <p class="rumus-luas">
+                    Rumus Luas Segitiga Yaitu:
+                    </p>
+                    <p class="style-rulus">
+                        <strong>L = 1/2 x a x t</strong>
+                    </p>
+                    <br>
+                        <p class="dimana-style">
+                            Dimana:
+                            <br>
+                            L = Luas
+                            <br>
+                            a = Panjang Alas
+                            <br>
+                            t = Tinggi
+                        </p>
+                </div>
     
                 <hr>
     
@@ -47,41 +64,67 @@
                         <input id="tinggi" type="number" />
                     </div>
     
-                    <p id="result">Hasil Perhitungan</p>
+                    <p id="result-luas">Hasil Perhitungan</p>
     
-                    <button>Hitung</button>
+                    <button onclick="luas_segitiga()">Hitung</button>
                 </form>
             </aside>
     
             <aside>
                 <header>
-                    <h1 class="luas-segitiga-hdr">Luas Segitiga</h1>
+                    <h1 class="keliling-segitiga-hdr">Keliling Segitiga</h1>
                 </header>
     
-                <article class="luas-segitiga-content">
-                    <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga:</p>
+                <article class="keliling-segitiga-content">
+                    <div class="keliling-segitiga-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpu_K2sD2INTf_XTpzrTpyG9AVToAbggZGJg&s" alt="Segitiga">
+                    </div>
+                    <p class="rumus-keliling">
+                        Rumus Keliling Segitiga:
+                    </p>
+                    <p class="style-rumus-keliling">
+                        <strong>K = S1 + S2 + S3</strong>
+                    </p>
+                    </article>
+                    <br>
+                    <p class="dimana-style">
+                        Di mana :
+                        <br>
+                        K = Keliling
+                        <br>
+                        S1 = Sisi A
+                        <br>
+                        S2 = Sisi B
+                    </p>
                 </article>
     
                 <hr>
     
                 <form>
                     <header>
-                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                        <h1 class="Keliling-segitiga-form-header">Hitung Keliling Segitiga</h1>
                     </header>
     
                     <div class="input-data">
-                        <label for="panjang-alas">Panjang Alas:</label>
-                        <input id="panjang-alas" type="number" />
+                        <label for="panjang-alas">Sisi 1:</label>
+                        <input id="kels1" type="number" />
                     </div>
+
                     <div class="input-data">
-                        <label for="tinggi">Tinggi:</label>
-                        <input id="tinggi" type="number" />
+                        <label for="tinggi">Sisi 2:</label>
+                        <input id="kels2" type="number" />
                     </div>
+
+                    <div class="input-data">
+                        <label for="tinggi">Sisi 3:</label>
+                        <input id="kels3" type="number" />
+                    </div>
+
+                    
     
-                    <p id="result">Hasil Perhitungan</p>
+                    <p id="result-kel">Hasil Perhitungan</p>
     
-                    <button>Hitung</button>
+                    <button onclick="kel_segitiga()">Hitung</button>
                 </form>
             </aside> 
     
